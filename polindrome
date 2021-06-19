@@ -1,0 +1,12 @@
+str = input('введите строку: ').lower()
+str1 = str.replace(" ","")
+l = len(str1)
+one = str1[:l//2]
+two = str1[l//2:]
+if l % 2 != 0:
+    one += (str1[l//2])
+two = two[::-1]
+if one == two:
+    print('Это палиндром')
+else:
+    print('Это не палиндром')
