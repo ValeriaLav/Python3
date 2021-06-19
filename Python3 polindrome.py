@@ -1,10 +1,15 @@
-str = input('enter the string: ').lower()
+str = input('enter thee string: ').lower()
 str1 = str.replace(" ","")
-str2 = str1[::-1]
-if str1 == str2:
-    print('This is a palindrome')
+l = len(str1)
+one = str1[:l//2]
+two = str1[l//2:]
+if l % 2 != 0:
+    one += (str1[l//2])
+two = two[::-1]
+if one == two:
+    print('this is a palindrome')
 else:
-    print('This is not a palindrome')
+    print('this is not a palindrome')
 # examples of palindromes in Russian
 # Лёша на полке клопа нашёл
 # А роза упала на лапу Азора
