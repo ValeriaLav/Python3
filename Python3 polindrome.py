@@ -1,21 +1,16 @@
-str = input('введите строку: ').lower()
+str = input('enter the string: ').lower()
 str1 = str.replace(" ","")
-l = len(str1)
-one = str1[:l//2]
-two = str1[l//2:]
-if l % 2 != 0:
-    one += (str1[l//2])
-two = two[::-1]
-if one == two:
-    print('Это палиндром')
+str2 = str1[::-1]
+if str1 == str2:
+    print('This is a palindrome')
 else:
-    print('Это не палиндром')
-# ПРИМЕРЫ ПАЛИНДРОМОВ
+    print('This is not a palindrome')
+# examples of palindromes in Russian
 # Лёша на полке клопа нашёл
 # А роза упала на лапу Азора
-# Я иду съ мечемъ судия
 # Я арка края
 # О лета тело
-# Молебен о коне белом
-
-
+# examples of palindromes in English
+# A man, a plan, a canal-Panama 
+# Was it a car or a cat I saw
+# Do geese see God?
