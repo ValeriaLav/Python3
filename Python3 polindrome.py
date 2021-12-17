@@ -6,7 +6,6 @@ if str1 == str2:
 else:
     print('This is not a palindrome')
 # examples of palindromes in Russian
-# Лёша на полке клопа нашёл
 # А роза упала на лапу Азора
 # Я арка края
 # О лета тело
